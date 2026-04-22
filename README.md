@@ -30,4 +30,3 @@
 8. ssh -i ~/Downloads/my-server-key.pem ubuntu@13.233.140.131
 
 ## Configuration Steps
-
