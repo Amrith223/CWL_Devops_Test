@@ -1,0 +1,19 @@
+# User and permission configuration
+
+* OWNERSHIP ASSIGNED
+------------------------
+sudo chown -R monitor_user:monitor_user /opt/container-monitor
+
+*PERMISSIONS SET
+--------------------------
+sudo chmod 750 /opt/container-monitor
+sudo chmod 750 /opt/container-monitor/logs
+sudo chmod 750 /opt/container-monitor/monitor.sh
+
+
+*CRON JOB CONFIGURED
+sudo crontab -u monitor_user -e
+sudo crontab -u monitor_user -l
+
+* Verified Permission
+ls -la /opt/container-monitor/
