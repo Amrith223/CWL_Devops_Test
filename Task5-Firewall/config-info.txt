@@ -1,0 +1,4 @@
+Firewall configured on: Thu Apr 23 07:19:23 UTC 2026
+Server IP: 3.110.214.157
+UFW Version: ufw 0.36.1
+Copyright 2008-2021 Canonical Ltd.
