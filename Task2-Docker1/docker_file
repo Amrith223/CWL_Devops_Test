@@ -1,0 +1,17 @@
+# Used Nginx image as base
+FROM nginx:alpine
+
+# Setting working directory
+WORKDIR /usr/share/nginx/html
+
+# Remove default nginx page
+RUN rm -rf ./*
+
+# Copy our custom index.html into the container
+COPY index.html .
+
+# Expose port 80 inside the container
+EXPOSE 80
+
+# Start Nginx server
+CMD ["nginx", "-g", "daemon off;"]
